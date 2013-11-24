@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<com.savanto.tictactoebot.SquareLayout
+	    xmlns:tictactoebot="http://schemas.android.com/apk/res/com.savanto.tictactoebot"
+	    android:id="@+id/board"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/board" >
+	
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="8" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="7" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="6" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="5" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="4" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="3" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="2" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="1" />
+		<com.savanto.tictactoebot.CellView
+		    style="@style/Cell"
+		    tictactoebot:index="0" />
+
+	</com.savanto.tictactoebot.SquareLayout>
+
+    <ProgressBar 
+        android:id="@+id/skill"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/skill_padding"
+        android:layout_below="@id/board" />
+    <TextView 
+        android:id="@+id/skill_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/skill_padding"
+        android:text="@string/skill"
+        android:textSize="@dimen/skill_size"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/board" />
+
+	<TextView 
+	    android:id="@+id/status"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:textSize="@dimen/status_size"
+	    android:layout_below="@id/skill" />
+
+	<Button
+	    android:id="@+id/new_game"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/new_game"
+	    android:layout_alignRight="@id/board"
+	    android:layout_below="@id/status" />
+
+	<TextView 
+	    android:id="@+id/stats_games_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/stats_games"
+	    android:layout_below="@id/new_game" />
+	<TextView 
+	    android:id="@+id/stats_games"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:layout_below="@id/new_game"
+	    android:layout_toRightOf="@id/stats_games_label" />
+	
+	<TextView 
+	    android:id="@+id/stats_player_wins_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/stats_player_wins"
+	    android:layout_below="@id/stats_games_label" />
+	<TextView 
+	    android:id="@+id/stats_player_wins"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:layout_below="@id/stats_games_label"
+	    android:layout_toRightOf="@id/stats_player_wins_label" />
+
+	<TextView 
+	    android:id="@+id/stats_computer_wins_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/stats_computer_wins"
+	    android:layout_below="@id/stats_player_wins_label" />
+	<TextView 
+	    android:id="@+id/stats_computer_wins"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:layout_below="@id/stats_player_wins_label"
+	    android:layout_toRightOf="@id/stats_computer_wins_label" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="board_border">5dp</dimen>
+	<dimen name="cell_border">5dp</dimen>
+
+	<dimen name="mark">80sp</dimen>
+
+	<dimen name="status_size">20sp</dimen>
+	<dimen name="skill_size">12sp</dimen>
+	<dimen name="skill_padding">3dp</dimen>
+
+</resources>

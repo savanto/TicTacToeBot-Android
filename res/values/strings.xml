@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tic Tac Toe Bot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+	<string name="new_game">New Game</string>
+    <string name="skill">Computer Skill Level</string>
+    <string name="stats_games">Games played: </string>
+    <string name="stats_player_wins">Player victories: </string>
+    <string name="stats_computer_wins">Computer victories: </string>
+    
+    <string name="x_to_move">X to move.</string>
+    <string name="o_to_move">O to move.</string>
+    <string name="x_victory">X wins!</string>
+    <string name="o_victory">O wins!</string>
+    <string name="tie">Tie.</string>
+
+    <string name="error">There was an error. Please start a new game.</string>
+</resources>
